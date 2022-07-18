@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.card {
+    padding: 3em;
+    font-size: 2rem;
+}

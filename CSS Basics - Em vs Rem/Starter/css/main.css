@@ -1,0 +1,26 @@
+
+html {
+    /*font-size: 16px default*/
+}
+body {
+    height: 100vh;
+    font-family: 'Poppins';
+    background: rgb(233, 233, 233);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 30%;
+    height: 300px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1em;
+    padding: 0 2em;
+
+}

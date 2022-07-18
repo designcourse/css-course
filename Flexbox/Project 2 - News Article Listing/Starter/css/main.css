@@ -1,0 +1,13 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 6.7em;
+    background: #FCF5EB;
+    font-family: "Poppins";
+}
+
+h1.mainhead {
+    font-size: 4.4rem;
+}

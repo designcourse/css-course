@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 6.2em;
+    background: #FCE7FF;
+    font-family: "Poppins";
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 120%;
+}
+
+a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: #933A9F;
+    display: inline-block;
+    padding: 1.25rem;
+    border-radius: .375rem;
+}
