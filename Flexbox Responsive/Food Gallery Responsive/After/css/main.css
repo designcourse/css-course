@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Playfair Display";
+    margin: 2em;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: normal;
+    margin-bottom: 6.8rem;
+}
+
+span {
+    color: #07801E;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    height: 400px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container img {
+        flex-grow: 1;
+    }
+
+}
+

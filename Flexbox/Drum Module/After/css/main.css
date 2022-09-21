@@ -1,0 +1,95 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #D7DED3;
+    font-family: 'Poppins';
+}
+
+section {
+    background: white;
+    padding: 7em;
+    width: 1200px;
+    border-radius: .8em;
+    display: flex;
+    gap: 13.5em;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: .6;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a.cta {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+    color: #406A29;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+a.cta p {
+    margin: 0;
+}
+
+.right-col {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 2.8em;
+}
+
+.box {
+    width: 30%;
+    aspect-ratio: 1/1;
+    gap: 1em;
+    border-radius: .6em;
+}
+
+.box:nth-of-type(1) {
+    background-image: url('../assets/drum1.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(2) {
+    background-image: url('../assets/drum2.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(3) {
+    background-color: #D0E1BB;
+}
+
+.box:nth-of-type(6) {
+    background-image: url('../assets/drum3.jpg');
+    background-size: cover;
+}
+.box:nth-of-type(5) {
+    background-color: #BBC8E1;
+}
+

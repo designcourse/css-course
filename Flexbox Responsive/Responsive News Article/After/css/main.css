@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background: #FCF5EB;
+    font-family: "Poppins";
+}
+
+h1 {
+    font-family: 'Playfair Display';
+}
+
+h1.mainhead {
+    font-size: 4.4rem;
+    margin-top: 2em;
+    position: relative;
+}
+
+h1.mainhead::before {
+    position: absolute;
+    content: 'N';
+    top: -13rem;
+    left: -8rem;
+    font-size: 30rem;
+    color: rgba(0,0,0,0.05);
+    pointer-events: none;
+    z-index: -1;
+}
+
+main {
+    margin: 0 auto;
+    padding: 2.4em;
+    max-width: 1200px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+}
+
+section h1 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    article {
+        flex: 1;
+    }
+    .first {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .first {
+        flex-basis: 0;
+    }
+}

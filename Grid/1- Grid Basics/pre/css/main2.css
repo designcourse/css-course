@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+.gallery > div {
+    background: rgb(0, 192, 121);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.gallery {
+    height: 100vh;
+}
+
+/* Ex. 1 Grid container */
+
+.gallery {
+    display: grid;  /* inline-grid */
+    gap: 1em;
+}
+
+
+/* Ex. 2 Columns */
+
+.gallery {
+    display: grid;  
+    gap: 1em;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(4, 1fr) repeat(2, auto);
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr auto;
+    grid-template-columns: 300px 30% auto;
+
+    grid-template-columns: minmax(270px, 30%) auto;
+}
+
+
+/* Ex. 3 Rows */
+
+.gallery {
+    display: grid;  
+    gap: 1em;
+
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr;
+
+    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(2, 300px) repeat(4, auto);
+    grid-template-rows: repeat(2, minmax(100px, 200px)) repeat(4, auto);
+}
+
+
+/* Ex. 4 Columns and Rows */
+
+.gallery {
+    display: grid;  
+    gap: 1em;
+
+    grid-template-rows: inherit;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
