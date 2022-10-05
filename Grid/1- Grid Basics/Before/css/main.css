@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+.gallery > div {
+    background: rgb(0, 192, 121);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.gallery {
+    height: 100vh;
+}
