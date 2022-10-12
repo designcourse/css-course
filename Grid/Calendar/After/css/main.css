@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #0460BC;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+section {
+    background: white;
+    border-radius: 1em;
+    width: 380px;
+    padding: 2em;
+    margin: 20em auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 1.7rem;
+    height: 100%;
+    text-align: center;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2em;
+}
+
+.gray {
+    color: gray;
+}
+
+span {
+    cursor: pointer;
+}
+span:hover {
+    background-color: #E1E9F0;
+    border-radius: .3em;
+}
+
+a {
+    background: #E1E9F0;
+    padding: .8em .8em .4em;
+    border-radius: .3em;
+}

@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #0460BC;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
