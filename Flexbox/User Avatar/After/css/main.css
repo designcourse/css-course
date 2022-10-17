@@ -1,25 +1,47 @@
 html {
     font-size: 62.5%;
 }
-
+* { 
+    box-sizing: border-box;
+}
 body {
-    margin: 6.2em;
-    background: #FCE7FF;
-    font-family: "Poppins";
+    background: #CBE1F1;
+    font-family: "Nunito";
+    margin: 3em;
 }
 
-h1 {
-    font-size: 2.6rem;
-    line-height: 120%;
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-a {
-    font-size: 1.6rem;
+.avatar {
+    background-color: white;
+    border-radius: 20em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.left-col {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 2.5rem;
     font-weight: bold;
-    color: white;
-    text-decoration: none;
-    background: #933A9F;
-    display: inline-block;
-    padding: 1.25rem;
-    border-radius: .375rem;
+    margin: 0 0 0 1em;
+}
+
+.status {
+    width: 2em;
+    height: 2em;
+    background: #5DBC3C;
+    border-radius: 50%;
+    margin-right: 3em;
 }
