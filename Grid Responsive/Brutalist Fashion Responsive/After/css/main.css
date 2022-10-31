@@ -24,7 +24,6 @@ section {
     grid-template-areas:
         "header header"
         "dog content"
-        "dog content"
         "fish tiger";
 
     grid-template-columns: 1fr 2fr;
@@ -60,9 +59,9 @@ section:before {
     content: 'wow';
     font-weight: 800;
     z-index: -1;
-    font-size: 20rem;
-    top: -140px;
-    left: -100px;
+    font-size: 30rem;
+    top: -190px;
+    left: -300px;
 }
 
 h1 {
@@ -99,35 +98,13 @@ svg {
 }
 
 @media only screen and (min-width: 700px) {
-
-
-
     section {
-        position: relative;
-        background: #F1EFE9;
-        height: 500px;
-        margin-top: 20em;
-        padding: 2em;
-    
-        display: grid;
-        grid-template-areas:
+        grid-template-areas: 
             "tiger header header"
             "tiger dog content"
             "fish dog content";
-    
+
         grid-template-columns: repeat(2, 1fr) 2fr;
         grid-template-rows: auto 1fr 100px;
-    
-        gap: 2em;
-    }
-
-    section:before {
-        position: absolute;
-        content: 'wow';
-        font-weight: 800;
-        z-index: -1;
-        font-size: 30rem;
-        top: -190px;
-        left: -300px;
     }
 }
