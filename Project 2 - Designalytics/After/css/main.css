@@ -1,0 +1,367 @@
+:root {
+  --primary-color: #5E85F8;
+  --secondary-color: #292B31;
+  --link-color: #BAC2D9;
+  --border-color: #464A56;
+  --inner-panel-color: #32343C;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background-color: #1F2023;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  margin: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li, p, a {
+  font-size: 1.6rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+svg {
+  width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Utils */
+.hide-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 620px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+/* Header */
+header.primary {
+  display: flex;
+  justify-content: space-between;
+}
+
+header svg {
+  width: 42px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+header.primary, .user {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+a.logo img {
+  width: 170px;
+}
+
+/* Sales Stats */
+.sales, .extra-stats {
+  padding: 3.8em;
+  color: white;
+  border-radius: 1em;
+  margin-top: 2em;
+}
+
+.sales {
+  background: var(--primary-color);
+  position: relative;
+}
+.sales h2 {
+  font-size: 6.4rem;
+  margin: 0;
+}
+.sales .label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+.sales img {
+  position: absolute;
+  bottom: -45px;
+  right: -5px;
+  width: 300px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+/* Extra Stats */
+.extra-stats {
+  padding: 3.8em 0;
+}
+
+.extra-stats ul {
+  display: flex;
+  justify-content: space-between;
+}
+.extra-stats ul strong {
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+  display: block;
+}
+
+/* Earnings and Visitors */
+h1 {
+  color: white;
+  font-size: 2.6rem;
+}
+
+.chart-container {
+  background: var(--secondary-color);
+  border-radius: 1em;
+  padding: 2.8em;
+}
+
+/* Customers */
+.customers ul {
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  color: white;
+}
+.customers ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.customers ul li .cta-btn img {
+  width: 50px;
+  height: 50px;
+  padding: 1em;
+  background: var(--secondary-color);
+  border-radius: 0.3em;
+}
+.customers ul .user-left {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.customers ul .user-left img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.customers ul .user-info strong {
+  display: block;
+}
+
+/* Mobile Menu */
+aside {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: var(--primary-color);
+  width: 40%;
+  padding: 3em;
+  text-align: right;
+  transition: transform 0.6s;
+  transform: translateX(100%);
+}
+aside a {
+  color: white;
+  font-size: 2.6rem;
+}
+aside img {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+aside ul {
+  margin-top: 6em;
+}
+aside ul li {
+  margin-bottom: 1.5em;
+}
+
+.toggle-menu {
+  transform: translateX(0);
+}
+
+/* Tablet */
+@media only screen and (min-width: 620px) {
+  .signout {
+    display: block;
+    padding: 0.7em;
+    background-color: var(--secondary-color);
+    border-radius: 0.3em;
+  }
+  .header-right nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+  aside {
+    position: inherit;
+    height: auto;
+    background: unset;
+    width: auto;
+    padding: 2em;
+    margin-top: 2em;
+    text-align: inherit;
+    transform: unset;
+    transition: unset;
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+  }
+  aside a {
+    font-size: 1.8rem;
+  }
+  aside img {
+    background: unset;
+    cursor: unset;
+  }
+  aside nav ul {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  aside nav ul li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  aside nav ul li img {
+    display: block !important;
+  }
+  /* Main Area */
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 3em;
+  }
+  .earnings, .customers {
+    grid-column: 1/3;
+  }
+  .extra-stats ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 3em auto;
+    padding: 0 2em;
+  }
+  .col2 {
+    display: flex;
+    gap: 2em;
+  }
+  aside {
+    width: 10%;
+    flex-grow: 3;
+    min-width: 250px;
+    padding: 2em;
+  }
+  aside nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+  aside nav ul {
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2em;
+  }
+  aside nav ul li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  aside nav ul li img {
+    display: block !important;
+  }
+  /* Main Area */
+  main {
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 3em;
+    flex-grow: 2;
+  }
+  .extra-stats {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+  }
+  .extra-stats ul {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+  .premium {
+    display: block;
+    background: var(--inner-panel-color);
+    padding: 2em;
+    color: white;
+    border-radius: 0.3em;
+  }
+  .premium header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .premium header h3 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .premium header img {
+    width: 20px;
+  }
+  .premium p {
+    line-height: 150%;
+  }
+}/*# sourceMappingURL=main.css.map */
