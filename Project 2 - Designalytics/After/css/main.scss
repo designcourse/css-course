@@ -35,6 +35,47 @@ a.logo img {
     width: 170px;
 }
 
+/* Mobile Menu */
+
+aside {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: var(--primary-color);
+    width: 40%;
+    padding: 3em;
+    text-align: right;
+    transition: transform .6s;
+    transform: translateX(100%);
+
+    a {
+        color: white;
+        font-size: 2.6rem;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: .3em;
+        cursor: pointer;
+    }
+
+    ul {
+        margin-top: 6em;
+
+        li {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.toggle-menu {
+    transform: translateX(0);
+}
+
 /* Sales Stats */ 
 
 .sales, .extra-stats {
@@ -145,47 +186,6 @@ h1 {
     }
 }
 
-
-/* Mobile Menu */
-
-aside {
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    background: var(--primary-color);
-    width: 40%;
-    padding: 3em;
-    text-align: right;
-    transition: transform .6s;
-    transform: translateX(100%);
-
-    a {
-        color: white;
-        font-size: 2.6rem;
-    }
-
-    img {
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: .3em;
-        cursor: pointer;
-    }
-
-    ul {
-        margin-top: 6em;
-
-        li {
-            margin-bottom: 1.5em;
-        }
-    }
-}
-
-.toggle-menu {
-    transform: translateX(0);
-}
 
 
 /* Tablet */ 
